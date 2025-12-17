@@ -1,0 +1,15 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Training artifacts
+checkpoints/
+tensorboard_logs/
+videos/
+
+# Saved models and normalization stats
+*.zip
+*.pkl
+
+# OS junk
+.DS_Store
