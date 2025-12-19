@@ -1,5 +1,12 @@
 # Walker2d Experimentation w/Custom Reward Policies
 
+## TODO
+* Move CustomReward to separate file
+* Add mild improvements to leg movement if possible
+* Update `README.md` with appropriate changes in 'Approach'
+* Clean up Approach section to be less verbose
+* Add code requirements + tools section
+
 ## Objective/Goals
 * Learn to train an RL policy on a humanoid-like figure, while working with some preexisting realistic phsyics engine
 * Develop understanding of RL and reward policies
@@ -11,23 +18,26 @@ Due to CPU limitations, I decided to use a relatively lightweight simulator, and
 ## Project Structure
 ```
 walker2d-demo/
-├── README.md
-├── requirements.txt
-├── train_walker2d.py
-├── record_video.py
 ├── assets/
 |   ├── default_policy_video.gif
 |   └── custom_policy_video.gif
-└── plots/
-    ├── learning_curve_default.csv
-    ├── learning_curve_default.png
-    └── plot_learning_curves.ipynb 
+├── plots/
+|   ├── learning_curve_custom.csv
+|   ├── learning_curve_custom.csv
+|   ├── learning_curve_default.csv
+|   ├── learning_curve_default.png
+|   └── plot_learning_curves.ipynb 
+├── .gitignore
+├── README.md
+├── record_video.py
+├── requirements.txt 
+├── train_walker2d.py
 ```
 
 ## Results
 ### Default Policy - Learning Curve and Model GIF
-<img src="plots/learning_curve_default.png" height="350"> <img src="assets/default_policy_video.gif" height="350">
+<img src="plots/learning_curve_default.png" height="250"> <img src="assets/default_policy_video.gif" height="250">
 
 ### Custom Policy - Learning Curve and Model GIF
-<img src="plots/learning_curve_default.png" height="350"> <img src="assets/default_policy_video.gif" height="350">
+<img src="plots/learning_curve_custom.png" height="250"> <img src="assets/custom_policy_video.gif" height="250">
 
